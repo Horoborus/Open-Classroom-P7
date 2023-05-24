@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -18,16 +19,13 @@ function Navbar() {
       </div>
 
       <div className="nav-links">
-        <a href="//github.io/jo_geek" target="_blank" rel="noopener noreferrer">
-          Accueil
-        </a>
-        <a
-          href="http://stackoverflow.com/users/4084003/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          A Propos
-        </a>
+        <Link to="/about">
+          <div>Accueil</div>
+        </Link>
+
+        <Link to="/about">
+          <div>A Propos</div>
+        </Link>
       </div>
     </div>
   );
