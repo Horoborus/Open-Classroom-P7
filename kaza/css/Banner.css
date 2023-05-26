@@ -1,0 +1,73 @@
+/* Banner */
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+}
+
+.banner_background {
+  position: absolute;
+  width: 90%;
+  border-radius: 10px;
+  height: 100px;
+  background: #000000;
+  mix-blend-mode: darken;
+}
+
+.banner__image {
+  position: absolute;
+  background-image: url(../images/background.png);
+  width: 100%;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.banner h1 {
+  display: block;
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: white;
+  text-align: start;
+  width: 80%;
+  top: 15px;
+}
+
+@media (min-width: 350px) {
+  .banner h1 {
+    text-align: start;
+    top: 10%;
+  }
+}
+/* Media Tablete */
+@media (min-width: 620px) {
+  .banner {
+    height: 220px;
+    margin-bottom: 20px;
+  }
+  .banner_background {
+    height: 220px;
+    border-radius: 20px;
+  }
+  .banner__image {
+    height: 220px;
+    border-radius: 20px;
+  }
+  .banner h1 {
+    font-size: 48px;
+    text-align: center;
+    top: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner h1 {
+    top: 25%;
+  }
+}/*# sourceMappingURL=Banner.css.map */

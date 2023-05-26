@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.css";
+import "./Card.scss";
 function Card() {
   return (
     <div className="card__contain">

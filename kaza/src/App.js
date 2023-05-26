@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
-import Card from "./components/Card";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar.js";
+import Banner from "./components/Banner.js";
+import Card from "./components/Card.js";
+import Footer from "./components/Footer.js";
 
-import "./styles/App.css";
+import "../src/Sass/base.scss";
 function App() {
   return (
     <div>
