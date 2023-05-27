@@ -7,70 +7,57 @@
   width: 90%;
   position: relative;
 }
-
-.nav {
-  display: inline;
-}
-
-.logo {
+.nav__logo img {
   width: 150px;
   height: 50px;
 }
-
-.nav-logo {
-  background-repeat: no-repeat;
-  background-position: cover;
-}
-
-.nav > .nav-btn {
+.nav nav-btn {
   display: none;
 }
 
-.nav > .nav-links {
+.nav__links {
   display: inline;
   float: right;
   font-size: 18px;
 }
-
-.nav > .nav-links > a {
+.nav__links a {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #ff6060;
 }
-
-.nav > .nav-links > a:hover {
+.nav__links a:hover {
   text-decoration: underline;
 }
 
-.nav > #nav-check {
+#nav__check {
   display: none;
 }
 
 @media (max-width: 372px) {
-  .nav > .nav-btn {
+  .nav__btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 25px;
   }
-  .nav > .nav-btn > label {
+  .nav__btn label {
     display: inline-block;
     width: 50px;
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover,
-  .nav #nav-check:checked ~ .nav-btn > label {
+  .nav__btn label:hover,
+  .nav__btn .nav #nav-check:checked ~ .nav__btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  .nav > .nav-btn > label > span {
+  .nav__btn label span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #eee;
+    border-top: 2px solid #f7f7f7;
   }
-  .nav > .nav-links {
+  .nav__links {
     position: absolute;
     z-index: 1;
     display: block;
@@ -82,14 +69,19 @@
     top: 80px;
     left: 0px;
   }
-  .nav > .nav-links > div {
+  .nav__links a {
+    display: flex;
+    padding: 20px 0px 20px 30px;
+    text-decoration: none;
+  }
+  .nav__links div {
     display: block;
     width: 100%;
   }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
+  .nav > #nav__check:not(:checked) ~ .nav__links {
     height: 0px;
   }
-  .nav > #nav-check:checked ~ .nav-links {
+  .nav > #nav__check:checked ~ .nav__links {
     overflow-y: auto;
   }
 }/*# sourceMappingURL=Navbar.css.map */

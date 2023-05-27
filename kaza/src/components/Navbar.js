@@ -1,25 +1,25 @@
 import React from "react";
-import "./Navbar.scss";
+import "../Sass/Layout/Navbar.scss";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="nav">
-      <input type="checkbox" id="nav-check" />
+      <input type="checkbox" id="nav__check" />
 
-      <div className="nav-logo">
+      <div className="nav__logo">
         <img src="logo.png" className="logo" alt="" />
       </div>
-      <div className="nav-btn">
-        <label htmlFor="nav-check">
+      <div className="nav__btn">
+        <label htmlFor="nav__check">
           <span />
           <span />
           <span />
         </label>
       </div>
 
-      <div className="nav-links">
-        <Link to="/about">
+      <div className="nav__links">
+        <Link to="/">
           <div>Accueil</div>
         </Link>
 

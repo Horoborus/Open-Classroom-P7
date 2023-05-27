@@ -1,4 +1,5 @@
 /* Banner */
+@import "/src/Sass/Utils/Variables.scss";
 
 .banner {
   position: relative;
@@ -6,39 +7,37 @@
   justify-content: center;
   width: 100%;
   height: 120px;
-}
-.banner_background {
-  position: absolute;
-  width: 90%;
-  border-radius: 10px;
-  height: 100px;
-  background: #000000;
-  mix-blend-mode: darken;
-}
 
-.banner__image {
-  position: absolute;
-  background-image: url(../images/background.png);
-  width: 100%;
-  height: 100px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  opacity: 0.8;
-}
-.banner h1 {
-  display: block;
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 100%;
-  color: white;
-  text-align: start;
-  width: 80%;
-  top: 15px;
-}
+  &__background {
+    position: absolute;
+    width: 90%;
+    border-radius: $border-radius-m;
+    height: 100px;
+    background: $full-dark;
+    mix-blend-mode: darken;
 
+    & img {
+      position: absolute;
+      width: 100%;
+      border-radius: $border-radius-m;
+      opacity: 0.8;
+      height: 100px;
+      object-fit: center;
+    }
+  }
+  & h1 {
+    display: block;
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: $only-white;
+    text-align: start;
+    width: 80%;
+    top: 15px;
+  }
+}
 @media (min-width: 350px) {
   .banner h1 {
     text-align: start;
@@ -50,19 +49,22 @@
   .banner {
     height: 220px;
     margin-bottom: 20px;
-  }
-  .banner_background {
-    height: 220px;
-    border-radius: 20px;
-  }
-  .banner__image {
-    height: 220px;
-    border-radius: 20px;
-  }
-  .banner h1 {
-    font-size: 48px;
-    text-align: center;
-    top: 25px;
+
+    &__background {
+      height: 220px;
+      border-radius: $border-radius-l;
+
+      & img {
+        height: 220px;
+        border-radius: $border-radius-l;
+        object-fit: center;
+      }
+    }
+    & h1 {
+      font-size: 48px;
+      text-align: center;
+      top: 25px;
+    }
   }
 }
 

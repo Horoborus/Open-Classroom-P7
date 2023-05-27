@@ -1,4 +1,4 @@
-.footer__contain {
+.footer {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -9,17 +9,11 @@
   gap: 40px;
   margin-top: 20px;
 }
-
-.footer__logo {
-  background-image: url(../images/LOGO\(1\).png);
-  background-repeat: no-repeat;
+.footer__logo img {
   height: 40px;
   width: 150px;
 }
-
-.footer__rights {
-  background-image: url(../images/Kasa-rights-reserved.png);
-  background-repeat: no-repeat;
+.footer__rights img {
   height: 40px;
   width: 230px;
 }/*# sourceMappingURL=Footer.css.map */
